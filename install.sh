@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-# This is heavily inspired by the amazing Michelle
+# This is heavily inspired by the amazing Michelle, Luke and Avi
 # https://github.com/craychee/loki-init
-# (I hold no malice that we have chosen different patron saints for our work.)
+# https://github.com/lukewertz/gabriel-init
+# https://github.com/froboy/durandal-init
 
 function pause() {
   read -p "$*"
@@ -12,7 +13,13 @@ CWD=($PWD)
 
 cd ~
 
+# We can't get them directly, but just click this button :)
+xcode-select --install
+
 pause 'Press [Enter] once you have installed XCode and XCode Command Line Tools.'
+
+# Just make sure...
+sudo xcodebuild -license accept
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -29,17 +36,35 @@ brew tap caskroom/versions
 
 brew install brew-cask
 
+# Applications
+brew cask install 1password
+brew cask install balsamiq-mockups
+brew cask install bartender
+brew cask install firefox
+brew cask install flux
 brew cask install google-chrome
-brew cask install alfred
+brew cask install google-photos-backup
+brew cask install harvest
+brew cask install iterm2
+brew cask install kap
+brew cask install omnigraffle
+brew cask install openoffice
+brew cask install processing
+brew cask install rescuetime
+brew cask install screaming-frog-seo-spider
+brew cask install sketch
+brew cask install skitch
 brew cask install skype
-brew cask install vagrant
-brew cask install virtualbox
-brew cask install sequel-pro
-brew cask install lastpass
-
-# Install and set up ST3
-echo "Setting up Sublime Text"
+brew cask install slack
+brew cask install sourcetree
 brew cask install sublime-text3
+brew cask install vagrant
+brew cask install vagrant-manager
+brew cask install virtualbox
+brew cask install zoomus
+
+# Install and set up Sublime Text 3
+echo "Setting up Sublime Text"
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
 git clone https://github.com/kkga/spacegray.git spacegray
 git clone https://github.com/sirkitree/DrupalCodingStandard.git
@@ -48,15 +73,44 @@ git clone https://github.com/kemayo/sublime-text-git.git
 git clone https://github.com/spadgos/sublime-jsdocs.git
 cd ~
 
+# App Store Apps
+brew install mas
+mas signin jimbirch@gmail.com # This will give a warning if you signed in to iCloud when you set up the computer.
+# id's are tied to specific versions.  Do a `mas list` to get an updated list.
+mas install 408981434 # iMovie (10.1.5)
+mas install 408981381 # iPhoto (9.6.1)
+mas install 970246631 # Disk Cleaner (1.3)
+mas install 411246225 # Caffeine (1.1.1)
+mas install 442168834 # SiteSucker (2.10.2)
+mas install 586862299 # Duplicate Cleaner For iPhoto (1.13)
+mas install 533696630 # Webcam Settings (2.3)
+mas install 417375580 # BetterSnapTool (1.7)
+mas install 403388562 # Transmit (4.4.12)
+mas install 506189836 # Harvest (2.0.6)
+mas upgrade
+
+# Dev tools
+brew install node
+brew install npm
+
+# Get composer and put it in the right place. This will require your password
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+
+# Be sure we can vagrant
+brew install ansible
+vagrant plugin install vagrant-hostmanager
+vagrant plugin install vagrant-auto_network
+
 # Set up PHP tools
 # https://philsturgeon.uk/php/2013/08/20/php-static-analysis-in-sublime-text/
 # http://benmatselby.github.io/sublime-phpcs/
 echo "Setting up PHP Tools"
 sudo chown -R `whoami` /usr/local
 brew tap homebrew/homebrew-php
-brew install phpmd
-brew install php-code-sniffer
-brew install php-cs-fixer
+
+# Do the Mac thing that you have to do but you shouldn't have to do
+# This https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
+curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist
 
 # Hold my own hand to make sure I finish configuring.
 echo "Add your ssh keys (you put them in your secret hiding place)."
@@ -66,15 +120,11 @@ chmod 400 ~/.ssh/*
 # Move preference files
 echo "Setting up your preference files."
 cp .gitconfig ~/.gitconfig
-cp phpcs.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-cp Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
-# @todo: export terminal configuration and move it here.
+cp .gitignore_global ~/.gitignore_global
+cp .profile ~/.profile
 
-# Set up Viscosity
-cd $CWD
-echo "Downloading Viscosity. You'll need to install it manually."
-wget https://www.sparklabs.com/downloads/Viscosity.dmg
-open Viscosity.dmg
-pause "Press [Enter] once Viscsoity is installed & configured."
+# Get git things
+curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-echo "NICE WORK! Time to make some noise..."
+echo "NICE WORK! Time to do all the things."

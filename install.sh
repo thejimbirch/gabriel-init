@@ -40,13 +40,16 @@ brew install brew-cask
 brew cask install 1password
 brew cask install balsamiq-mockups
 brew cask install bartender
+brew cask install docker
 brew cask install firefox
 brew cask install flux
 brew cask install google-chrome
 brew cask install google-photos-backup
 brew cask install harvest
+brew cask install integrity
 brew cask install iterm2
 brew cask install kap
+brew cask install limechat
 brew cask install omnigraffle
 brew cask install openoffice
 brew cask install processing
@@ -63,6 +66,14 @@ brew cask install vagrant-manager
 brew cask install virtualbox
 brew cask install zoomus
 
+# Not available
+# - Kalabox
+# - Mac Remover
+# - Pixelmator
+# - Reason 8
+# - Theremini Editor
+# - TotalValidator
+
 # Install and set up Sublime Text 3
 echo "Setting up Sublime Text"
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
@@ -77,6 +88,8 @@ cd ~
 brew install mas
 mas signin jimbirch@gmail.com # This will give a warning if you signed in to iCloud when you set up the computer.
 # id's are tied to specific versions.  Do a `mas list` to get an updated list.
+mas install 425424353 # The Unarchiver (3.11.1)
+mas install 467939042 # Growl (2.1.3)
 mas install 408981434 # iMovie (10.1.5)
 mas install 408981381 # iPhoto (9.6.1)
 mas install 970246631 # Disk Cleaner (1.3)
@@ -84,6 +97,8 @@ mas install 411246225 # Caffeine (1.1.1)
 mas install 442168834 # SiteSucker (2.10.2)
 mas install 586862299 # Duplicate Cleaner For iPhoto (1.13)
 mas install 533696630 # Webcam Settings (2.3)
+mas install 490192174 # Battery Health (5.4)
+mas install 408980954 # GarageBand (6.0.5)
 mas install 417375580 # BetterSnapTool (1.7)
 mas install 403388562 # Transmit (4.4.12)
 mas install 506189836 # Harvest (2.0.6)
@@ -92,6 +107,11 @@ mas upgrade
 # Dev tools
 brew install node
 brew install npm
+
+npm install --global a11y # Easy accessibility audits powered by the Chrome Accessibility Tools
+npm install --global grunt-cli # The Grunt command line interface.
+npm install --global imagemin-cli # Minify images
+npm install --global psi # PageSpeed Insights with reporting
 
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
@@ -127,4 +147,4 @@ cp .profile ~/.profile
 curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-echo "NICE WORK! Time to do all the things."
+echo "NICE WORK! Time to do the things."

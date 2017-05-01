@@ -60,7 +60,7 @@ brew cask install skitch
 brew cask install skype
 brew cask install slack
 brew cask install sourcetree
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install vagrant
 brew cask install vagrant-manager
 brew cask install virtualbox

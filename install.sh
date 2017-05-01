@@ -76,7 +76,7 @@ brew cask install zoomus
 
 # Install and set up Sublime Text 3
 echo "Setting up Sublime Text"
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+cd ~/Library/Application Support/Sublime Text 3/Packages
 git clone https://github.com/kkga/spacegray.git spacegray
 git clone https://github.com/sirkitree/DrupalCodingStandard.git
 git clone git://github.com/benmatselby/sublime-phpcs.git Phpcs

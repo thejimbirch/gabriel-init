@@ -27,7 +27,6 @@ sudo xcodebuild -license accept
 brew install ruby
 brew install git
 brew install wget
-brew install terminus
 brew install brew-cask
 
 brew tap caskroom/cask
@@ -35,6 +34,7 @@ brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/binary
 brew tap homebrew/php
+brew install homebrew/php/terminus
 
 # Applications
 brew cask install 1password

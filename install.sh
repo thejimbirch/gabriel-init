@@ -108,10 +108,12 @@ mas upgrade
 brew install node
 brew install npm
 
-npm install --global a11y # Easy accessibility audits powered by the Chrome Accessibility Tools
+npm install --global a11y # Easy accessibility audits powered by the Chrome Accessibility Tools.
 npm install --global grunt-cli # The Grunt command line interface.
-npm install --global imagemin-cli # Minify images
-npm install --global psi # PageSpeed Insights with reporting
+npm install --global imageoptim-cli # Automates ImageOptim, ImageAlpha, and JPEGmini.
+npm install --global imagemin-cli # Minify images.
+npm install --global psi # PageSpeed Insights with reporting.
+npm install --global sitespeed.io # Using sitespeed.io you can test your web site against Web Performance best practices.
 
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer

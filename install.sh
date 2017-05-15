@@ -54,6 +54,7 @@ brew cask install omnigraffle
 brew cask install openoffice
 brew cask install processing
 brew cask install rescuetime
+brew cask install java
 brew cask install screaming-frog-seo-spider
 brew cask install sketch
 brew cask install skitch

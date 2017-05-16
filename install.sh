@@ -35,6 +35,7 @@ brew tap homebrew/versions
 brew tap homebrew/binary
 brew tap homebrew/php
 brew install homebrew/php/terminus
+brew install homebrew/php/wp-cli
 
 # Applications
 brew cask install 1password

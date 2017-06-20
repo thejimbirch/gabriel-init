@@ -116,6 +116,7 @@ npm install --global imageoptim-cli # Automates ImageOptim, ImageAlpha, and JPEG
 npm install --global imagemin-cli # Minify images.
 npm install --global psi # PageSpeed Insights with reporting.
 npm install --global sitespeed.io # Using sitespeed.io you can test your web site against Web Performance best practices.
+npm install --global webpagetest #WebPageTest API Wrapper is a NPM package that wraps WebPageTest API for NodeJS.
 
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer

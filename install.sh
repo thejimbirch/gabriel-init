@@ -122,6 +122,8 @@ npm install --global webpagetest # WebPageTest API Wrapper is a NPM package that
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
+composer global require hirak/prestissimo # composer parallel install plugin
+
 # Be sure we can vagrant
 brew install ansible
 vagrant plugin install vagrant-hostmanager

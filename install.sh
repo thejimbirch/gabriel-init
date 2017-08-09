@@ -114,6 +114,7 @@ npm install --global a11y # Easy accessibility audits powered by the Chrome Acce
 npm install --global grunt-cli # The Grunt command line interface.
 npm install --global imageoptim-cli # Automates ImageOptim, ImageAlpha, and JPEGmini.
 npm install --global imagemin-cli # Minify images.
+npm install --global lighthouse # Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.
 npm install --global prettier # Prettier is an opinionated code formatter.
 npm install --global psi # PageSpeed Insights with reporting.
 npm install --global sitespeed.io # Using sitespeed.io you can test your web site against Web Performance best practices.

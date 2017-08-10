@@ -24,6 +24,7 @@ sudo xcodebuild -license accept
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Installing software...
+brew install imagemagick
 brew install ruby
 brew install git
 brew install wget

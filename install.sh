@@ -124,7 +124,13 @@ npm install --global webpagetest # WebPageTest API Wrapper is a NPM package that
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
+# Install Composer tools
 composer global require hirak/prestissimo # composer parallel install plugin
+composer global require drupal/coder # Drupal Coder, PHP_CodeSniffer, and Drupal Coding Standards
+composer global require wp-coding-standards/wpcs:dev-master # Adds WordPress Coding Standards
+
+# Sets Config for PHP_CodeSniffer
+phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
 
 # Be sure we can vagrant
 brew install ansible

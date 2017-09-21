@@ -23,7 +23,7 @@ sudo xcodebuild -license accept
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-# Installing software...
+# Homebrew
 brew install imagemagick
 brew install ruby
 brew install git
@@ -70,12 +70,9 @@ brew cask install virtualbox
 brew cask install zoomus
 
 # Not available
-# - Kalabox
 # - Mac Remover
 # - Pixelmator
 # - Reason 8
-# - Theremini Editor
-# - TotalValidator
 
 # Install and set up Sublime Text 3
 echo "Setting up Sublime Text"
@@ -107,28 +104,40 @@ mas install 403388562 # Transmit (4.4.12)
 mas install 506189836 # Harvest (2.0.6)
 mas upgrade
 
-# Dev tools
+# Node/NPM Tools
 brew install node
 brew install npm
-
-npm install --global a11y # Easy accessibility audits powered by the Chrome Accessibility Tools.
-npm install --global grunt-cli # The Grunt command line interface.
-npm install --global imageoptim-cli # Automates ImageOptim, ImageAlpha, and JPEGmini.
-npm install --global imagemin-cli # Minify images.
-npm install --global lighthouse # Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices.
-npm install --global pa11y@beta # Pa11y is your automated accessibility testing pal. It runs HTML CodeSniffer from the command line for programmatic accessibility reporting.
-npm install --global prettier # Prettier is an opinionated code formatter.
-npm install --global psi # PageSpeed Insights with reporting.
-npm install --global sitespeed.io # Using sitespeed.io you can test your web site against Web Performance best practices.
-npm install --global webpagetest # WebPageTest API Wrapper is a NPM package that wraps WebPageTest API for NodeJS.
+# Easy accessibility audits powered by the Chrome Accessibility Tools
+npm install --global a11y
+# The Grunt command line interface
+npm install --global grunt-cli
+# Automates ImageOptim, ImageAlpha, and JPEGmini
+npm install --global imageoptim-cli
+# Minify images
+npm install --global imagemin-cli
+# Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices
+npm install --global lighthouse
+# Pa11y is your automated accessibility testing pal. It runs HTML CodeSniffer from the command line for programmatic accessibility reporting
+npm install --global pa11y@beta
+# Prettier is an opinionated code formatter
+npm install --global prettier
+# PageSpeed Insights with reporting
+npm install --global psi
+# Using sitespeed.io you can test your web site against Web Performance best practices
+npm install --global sitespeed.io
+# WebPageTest API Wrapper is a NPM package that wraps WebPageTest API for NodeJS
+npm install --global webpagetest
 
 # Get composer and put it in the right place. This will require your password
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # Install Composer tools
-composer global require hirak/prestissimo # composer parallel install plugin
-composer global require drupal/coder # Drupal Coder, PHP_CodeSniffer, and Drupal Coding Standards
-composer global require wp-coding-standards/wpcs:dev-master # Adds WordPress Coding Standards
+# composer parallel install plugin
+composer global require hirak/prestissimo
+# Drupal Coder, PHP_CodeSniffer, and Drupal Coding Standards
+composer global require drupal/coder
+# Adds WordPress Coding Standards
+composer global require wp-coding-standards/wpcs:dev-master
 
 # Sets Config for PHP_CodeSniffer
 phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
@@ -149,7 +158,7 @@ brew tap homebrew/homebrew-php
 # This https://github.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain
 curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com/jirsbek/SSH-keys-in-macOS-Sierra-keychain/master/ssh.add.a.plist
 
-# Hold my own hand to make sure I finish configuring.
+# Hold my own hand to make sure I finish configuring
 echo "Add your ssh keys (you put them in your secret hiding place)."
 pause 'Press [Enter] when you have added your ssh key.'
 chmod 400 ~/.ssh/*

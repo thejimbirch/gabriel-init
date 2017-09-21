@@ -74,6 +74,15 @@ brew cask install zoomus
 # - Pixelmator
 # - Reason 8
 
+# Installs Python, Virtualenv, and GMvault
+# http://gmvault.org/
+brew install python
+pip install virtualenv
+virtualenv --no-site-packages gmvault-1.7-beta
+cd gmvault-1.7-beta/bin
+./pip install gmvault
+cd ~
+
 # Install and set up Sublime Text 3
 echo "Setting up Sublime Text"
 cd ~/Library/Application Support/Sublime Text 3/Packages

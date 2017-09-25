@@ -97,20 +97,20 @@ cd ~
 brew install mas
 mas signin jimbirch@gmail.com # This will give a warning if you signed in to iCloud when you set up the computer.
 # id's are tied to specific versions.  Do a `mas list` to get an updated list.
-mas install 425424353 # The Unarchiver (3.11.1)
-mas install 467939042 # Growl (2.1.3)
-mas install 408981434 # iMovie (10.1.5)
-mas install 408981381 # iPhoto (9.6.1)
-mas install 970246631 # Disk Cleaner (1.3)
-mas install 411246225 # Caffeine (1.1.1)
-mas install 442168834 # SiteSucker (2.10.2)
-mas install 586862299 # Duplicate Cleaner For iPhoto (1.13)
-mas install 533696630 # Webcam Settings (2.3)
-mas install 490192174 # Battery Health (5.4)
-mas install 408980954 # GarageBand (6.0.5)
-mas install 417375580 # BetterSnapTool (1.7)
-mas install 403388562 # Transmit (4.4.12)
-mas install 506189836 # Harvest (2.0.6)
+# mas install 425424353 # The Unarchiver (3.11.1)
+# mas install 467939042 # Growl (2.1.3)
+# mas install 408981434 # iMovie (10.1.5)
+# mas install 408981381 # iPhoto (9.6.1)
+# mas install 970246631 # Disk Cleaner (1.3)
+# mas install 411246225 # Caffeine (1.1.1)
+# mas install 442168834 # SiteSucker (2.10.2)
+# mas install 586862299 # Duplicate Cleaner For iPhoto (1.13)
+# mas install 533696630 # Webcam Settings (2.3)
+# mas install 490192174 # Battery Health (5.4)
+# mas install 408980954 # GarageBand (6.0.5)
+# mas install 417375580 # BetterSnapTool (1.7)
+# mas install 403388562 # Transmit (4.4.12)
+# mas install 506189836 # Harvest (2.0.6)
 mas upgrade
 
 # Node/NPM Tools

@@ -83,36 +83,6 @@ cd gmvault-1.7-beta/bin
 ./pip install gmvault
 cd ~
 
-# Install and set up Sublime Text 3
-echo "Setting up Sublime Text"
-cd ~/Library/Application Support/Sublime Text 3/Packages
-git clone https://github.com/kkga/spacegray.git spacegray
-git clone https://github.com/sirkitree/DrupalCodingStandard.git
-git clone git://github.com/benmatselby/sublime-phpcs.git Phpcs
-git clone https://github.com/kemayo/sublime-text-git.git
-git clone https://github.com/spadgos/sublime-jsdocs.git
-cd ~
-
-# App Store Apps
-brew install mas
-mas signin jimbirch@gmail.com # This will give a warning if you signed in to iCloud when you set up the computer.
-# id's are tied to specific versions.  Do a `mas list` to get an updated list.
-# mas install 425424353 # The Unarchiver (3.11.1)
-# mas install 467939042 # Growl (2.1.3)
-# mas install 408981434 # iMovie (10.1.5)
-# mas install 408981381 # iPhoto (9.6.1)
-# mas install 970246631 # Disk Cleaner (1.3)
-# mas install 411246225 # Caffeine (1.1.1)
-# mas install 442168834 # SiteSucker (2.10.2)
-# mas install 586862299 # Duplicate Cleaner For iPhoto (1.13)
-# mas install 533696630 # Webcam Settings (2.3)
-# mas install 490192174 # Battery Health (5.4)
-# mas install 408980954 # GarageBand (6.0.5)
-# mas install 417375580 # BetterSnapTool (1.7)
-# mas install 403388562 # Transmit (4.4.12)
-# mas install 506189836 # Harvest (2.0.6)
-mas upgrade
-
 # Node/NPM Tools
 brew install node
 brew install npm
@@ -171,12 +141,6 @@ curl -o ~/Library/LaunchAgents/ssh.add.a.plist https://raw.githubusercontent.com
 echo "Add your ssh keys (you put them in your secret hiding place)."
 pause 'Press [Enter] when you have added your ssh key.'
 chmod 400 ~/.ssh/*
-
-# Move preference files
-echo "Setting up your preference files."
-cp .gitconfig ~/.gitconfig
-cp .gitignore_global ~/.gitignore_global
-cp .profile ~/.profile
 
 # Get git things
 curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh

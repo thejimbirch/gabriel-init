@@ -90,6 +90,8 @@ brew install npm
 npm install --global a11y
 # The Grunt command line interface
 npm install --global grunt-cli
+# Grunt wrapper for criticalcss
+npm install -g grunt-criticalcss
 # Automates ImageOptim, ImageAlpha, and JPEGmini
 npm install --global imageoptim-cli
 # Minify images

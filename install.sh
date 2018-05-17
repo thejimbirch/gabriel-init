@@ -44,44 +44,19 @@ brew cask install balsamiq-mockups
 brew cask install bartender
 brew cask install docker
 brew cask install firefox
-brew cask install flux
+brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install google-photos-backup
 brew cask install harvest
-brew cask install integrity
 brew cask install iterm2
 brew cask install kap
-brew cask install limechat
-brew cask install omnigraffle
-brew cask install openoffice
-brew cask install processing
 brew cask install rescuetime
 brew cask install java
 brew cask install screaming-frog-seo-spider
-brew cask install sketch
-brew cask install skitch
-brew cask install skype
 brew cask install slack
-brew cask install sourcetree
 brew cask install sublime-text
-brew cask install vagrant
-brew cask install vagrant-manager
-brew cask install virtualbox
+brew cask install transmit
 brew cask install zoomus
-
-# Not available
-# - Mac Remover
-# - Pixelmator
-# - Reason 8
-
-# Installs Python, Virtualenv, and GMvault
-# http://gmvault.org/
-brew install python
-pip install virtualenv
-virtualenv --no-site-packages gmvault-1.7-beta
-cd gmvault-1.7-beta/bin
-./pip install gmvault
-cd ~
 
 # Node/NPM Tools
 brew install node
@@ -94,13 +69,9 @@ npm install --global grunt-cli
 npm install -g grunt-criticalcss
 # Automates ImageOptim, ImageAlpha, and JPEGmini
 npm install --global imageoptim-cli
-# Minify images
-npm install --global imagemin-cli
 # Lighthouse analyzes web apps and web pages, collecting modern performance metrics and insights on developer best practices
 npm install --global lighthouse
 # Pa11y is your automated accessibility testing pal. It runs HTML CodeSniffer from the command line for programmatic accessibility reporting
-npm install --global pa11y@beta
-# Prettier is an opinionated code formatter
 npm install --global prettier
 # PageSpeed Insights with reporting
 npm install --global psi
@@ -123,11 +94,6 @@ composer global require wp-coding-standards/wpcs:dev-master
 # Sets Config for PHP_CodeSniffer
 phpcs --config-set installed_paths $HOME/.composer/vendor/drupal/coder/coder_sniffer,$HOME/.composer/vendor/wp-coding-standards/wpcs
 
-# Be sure we can vagrant
-brew install ansible
-vagrant plugin install vagrant-hostmanager
-vagrant plugin install vagrant-auto_network
-
 # Set up PHP tools
 # https://philsturgeon.uk/php/2013/08/20/php-static-analysis-in-sublime-text/
 # http://benmatselby.github.io/sublime-phpcs/
@@ -148,4 +114,4 @@ chmod 400 ~/.ssh/*
 curl -o /usr/local/etc/bash_completion.d/git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
 curl -o /usr/local/etc/bash_completion.d/git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-echo "NICE WORK! Time to do the things."
+echo "Script finished.  Be sure to install Pixelmator manually."

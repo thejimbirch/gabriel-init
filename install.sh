@@ -79,6 +79,8 @@ npm install --global prettier
 npm install --global psi
 # Using sitespeed.io you can test your web site against Web Performance best practices
 npm install --global sitespeed.io
+# Generate uuids from the command line
+npm install -g uuid-cli
 # WebPageTest API Wrapper is a NPM package that wraps WebPageTest API for NodeJS
 npm install --global webpagetest
 

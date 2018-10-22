@@ -49,13 +49,15 @@ brew cask install google-chrome
 brew cask install google-photos-backup
 brew cask install harvest
 brew cask install iterm2
-brew cask install kap
-brew cask install rescuetime
 brew cask install java
+brew cask install kap
+brew cask install lando
+brew cask install rescuetime
 brew cask install screaming-frog-seo-spider
 brew cask install slack
 brew cask install sublime-text
 brew cask install transmit
+brew cask install vlc
 brew cask install zoomus
 
 # Node/NPM Tools

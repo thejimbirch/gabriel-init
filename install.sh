@@ -52,6 +52,7 @@ brew cask install iterm2
 brew cask install java
 brew cask install kap
 brew cask install lando
+brew cask install quicklook-json
 brew cask install rescuetime
 brew cask install screaming-frog-seo-spider
 brew cask install slack

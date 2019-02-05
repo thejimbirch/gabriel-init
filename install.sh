@@ -55,6 +55,7 @@ brew cask install lando
 brew cask install quicklook-json
 brew cask install rescuetime
 brew cask install screaming-frog-seo-spider
+brew cask install sequel-pro
 brew cask install slack
 brew cask install sublime-text
 brew cask install transmit

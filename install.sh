@@ -52,7 +52,6 @@ brew cask install iterm2
 brew cask install java
 brew cask install kap
 brew cask install lando
-brew cask install quicklook-json
 brew cask install rescuetime
 brew cask install screaming-frog-seo-spider
 brew cask install sequel-pro
@@ -61,6 +60,9 @@ brew cask install sublime-text
 brew cask install transmit
 brew cask install vlc
 brew cask install zoomus
+
+# Install all the Quick Look Plugins https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json webpquicklook suspicious-package quicklookase qlvideo
 
 # Node/NPM Tools
 brew install node

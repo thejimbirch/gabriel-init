@@ -58,6 +58,7 @@ brew cask install sequel-pro
 brew cask install slack
 brew cask install sublime-text
 brew cask install transmit
+brew cask install visual-studio-code
 brew cask install vlc
 brew cask install zoomus
 

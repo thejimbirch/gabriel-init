@@ -44,6 +44,7 @@ brew cask install balsamiq-mockups
 brew cask install bartender
 brew cask install docker
 brew cask install firefox
+brew cask install gitkraken
 brew cask install google-backup-and-sync
 brew cask install google-chrome
 brew cask install google-photos-backup
